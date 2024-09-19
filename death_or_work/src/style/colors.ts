@@ -10,9 +10,10 @@ export const Colors = {
     Gray200: "#d9d9d9",
     Gray100: "#eeeeee",
     Gray50: "#f6f6f6",
-    white: "#ffffff",
+    White: "#ffffff",
     CriticalMain: "#db2c36",
     CriticalBackground: "#ffe6d8",
+    Blue: "#1263FF",
 } as const
 
 export type colorsKeyOfType = keyof typeof Colors
