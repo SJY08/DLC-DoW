@@ -2,8 +2,15 @@ import styled from "styled-components"
 import { Colors } from "../style/colors"
 import Logo from "../assets/WhiteLogo.png"
 import Input from "../components/common/Input"
+import { useNavigate } from "react-router-dom"
 
 function LoginPage() {
+    const navigate = useNavigate()
+
+    const toSignUpHandler = () => {
+        navigate("/signup")
+    }
+
     return (
         <>
             <Background>
@@ -19,7 +26,8 @@ function LoginPage() {
 
                     <SubmitButton>로그인</SubmitButton>
                     <TextContainer>
-                        계정이 없으신가요?<ToSignUp>회원가입</ToSignUp>
+                        계정이 없으신가요?
+                        <ToSignUp onClick={toSignUpHandler}>회원가입</ToSignUp>
                     </TextContainer>
                 </InputContainer>
             </Background>
