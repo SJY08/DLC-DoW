@@ -1,8 +1,8 @@
 import styled from "styled-components"
 import { Colors } from "../style/colors"
-import Logo from "../assets/WhiteLogo.png"
 import Input from "../components/common/Input"
 import { useNavigate } from "react-router-dom"
+import WhiteLogo from "../assets/WhiteLogo"
 
 function LoginPage() {
     const navigate = useNavigate()
@@ -14,7 +14,7 @@ function LoginPage() {
     return (
         <>
             <Background>
-                <img src={Logo} />
+                <WhiteLogo />
 
                 <InputContainer>
                     <Input label="아이디" placeholder="아이디를 입력해주세요" />

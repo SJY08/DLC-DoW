@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Colors } from "../style/colors"
-import Logo from "../assets/WhiteLogo.png"
 import { useNavigate } from "react-router-dom"
+import WhiteLogo from "../assets/WhiteLogo"
 
 function StartPage() {
     const navigate = useNavigate()
@@ -15,7 +15,7 @@ function StartPage() {
             <Background>
                 <TitleContainer>
                     <Title>다같이 하는 일정관리</Title>
-                    <img src={Logo} />
+                    <WhiteLogo />
                     <SubTitle>Death or Work</SubTitle>
                 </TitleContainer>
 

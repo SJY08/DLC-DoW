@@ -1,8 +1,8 @@
 import styled from "styled-components"
 import { Colors } from "../style/colors"
-import Logo from "../assets/WhiteLogo.png"
 import Input from "../components/common/Input"
 import { useNavigate } from "react-router-dom"
+import WhiteLogo from "../assets/WhiteLogo"
 
 function SignUpPage() {
     const navigate = useNavigate()
@@ -14,7 +14,7 @@ function SignUpPage() {
     return (
         <>
             <Background>
-                <img src={Logo} />
+                <WhiteLogo />
 
                 <InputContainer>
                     <Input
