@@ -1,8 +1,15 @@
 import styled from "styled-components"
 import { Colors } from "../style/colors"
 import Logo from "../assets/WhiteLogo.png"
+import { useNavigate } from "react-router-dom"
 
 function StartPage() {
+    const navigate = useNavigate()
+
+    const toLoginHandler = () => {
+        navigate("/login")
+    }
+
     return (
         <>
             <Background>
@@ -12,7 +19,7 @@ function StartPage() {
                     <SubTitle>Death or Work</SubTitle>
                 </TitleContainer>
 
-                <StartButton>시작하기</StartButton>
+                <StartButton onClick={toLoginHandler}>시작하기</StartButton>
             </Background>
         </>
     )
@@ -43,12 +50,12 @@ const TitleContainer = styled.div`
 const Title = styled.p`
     font-size: 36px;
     font-weight: bolder;
-    color: ${Colors.white};
+    color: ${Colors.White};
 `
 
 const SubTitle = styled.p`
     font-size: 12px;
-    color: ${Colors.white};
+    color: ${Colors.White};
     font-weight: lighter;
     letter-spacing: 24px;
 `
