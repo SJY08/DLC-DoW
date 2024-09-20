@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Colors } from "../style/colors"
 import Input from "../components/common/Input"
 import { useNavigate } from "react-router-dom"
-import WhiteLogo from "../assets/WhiteLogo"
+import BlackLogo from "../assets/BlackLogo"
 
 function SignUpPage() {
     const navigate = useNavigate()
@@ -14,7 +14,7 @@ function SignUpPage() {
     return (
         <>
             <Background>
-                <WhiteLogo />
+                <BlackLogo />
 
                 <InputContainer>
                     <Input
@@ -54,7 +54,7 @@ const Background = styled.div`
     flex-direction: column;
     gap: 50px;
     align-items: center;
-    background: linear-gradient(${Colors.Gray700}, ${Colors.Gray800});
+    background: linear-gradient(${Colors.White}, ${Colors.Gray100});
 `
 
 const InputContainer = styled.form`
@@ -64,17 +64,17 @@ const InputContainer = styled.form`
     flex-direction: column;
     gap: 20px;
     padding: 50px;
-    background: linear-gradient(${Colors.Gray600}, ${Colors.Gray700});
-    border-radius: 50px;
+    background: linear-gradient(${Colors.Gray300}, ${Colors.Gray400});
+    border-radius: 20px;
 `
 
 const SubmitButton = styled.button`
     margin-top: 20px;
     width: 411.6px;
     height: 40px;
-    color: ${Colors.Black};
+    color: ${Colors.White};
     font-size: 16px;
-    background: ${Colors.Gray500};
+    background: ${Colors.Gray800};
     cursor: pointer;
     border: none;
     border-radius: 12px;
@@ -86,7 +86,7 @@ const TextContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: ${Colors.Gray400};
+    color: ${Colors.Gray800};
     font-size: 16px;
 `
 

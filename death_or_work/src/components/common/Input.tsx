@@ -81,11 +81,12 @@ const InputContainer = styled.div`
 
     &:hover {
         border: 1px solid ${Colors.Gray400};
-        background: ${Colors.Gray200};
+        background: ${Colors.Gray100};
     }
 
     &:focus {
         border: 1px solid ${Colors.Gray400};
+        background: ${Colors.Gray100};
     }
 `
 

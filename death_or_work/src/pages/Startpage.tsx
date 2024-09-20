@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Colors } from "../style/colors"
 import { useNavigate } from "react-router-dom"
-import WhiteLogo from "../assets/WhiteLogo"
+import BlackLogo from "../assets/BlackLogo"
 
 function StartPage() {
     const navigate = useNavigate()
@@ -14,9 +14,9 @@ function StartPage() {
         <>
             <Background>
                 <TitleContainer>
-                    <Title>다같이 하는 일정관리</Title>
-                    <WhiteLogo />
-                    <SubTitle>Death or Work</SubTitle>
+                    {/* <Title>다같이 하는 일정관리</Title> */}
+                    <BlackLogo />
+                    <SubTitle>Death or Working</SubTitle>
                 </TitleContainer>
 
                 <StartButton onClick={toLoginHandler}>시작하기</StartButton>
@@ -35,7 +35,7 @@ const Background = styled.div`
     flex-direction: column;
     gap: 50px;
     align-items: center;
-    background: linear-gradient(${Colors.Gray700}, ${Colors.Gray800});
+    background: linear-gradient(${Colors.White}, ${Colors.Gray100});
 `
 
 const TitleContainer = styled.div`
@@ -50,12 +50,12 @@ const TitleContainer = styled.div`
 const Title = styled.p`
     font-size: 36px;
     font-weight: bolder;
-    color: ${Colors.White};
+    color: ${Colors.Gray800};
 `
 
 const SubTitle = styled.p`
     font-size: 12px;
-    color: ${Colors.White};
+    color: ${Colors.Gray800};
     font-weight: lighter;
     letter-spacing: 24px;
 `
