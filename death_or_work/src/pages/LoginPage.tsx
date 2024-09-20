@@ -45,7 +45,7 @@ const Background = styled.div`
     flex-direction: column;
     gap: 50px;
     align-items: center;
-    background: linear-gradient(${Colors.White}, ${Colors.Gray100});
+    background: linear-gradient(${Colors.White}, ${Colors.Gray200});
 `
 
 const InputContainer = styled.form`
