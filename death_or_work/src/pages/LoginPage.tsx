@@ -11,6 +11,10 @@ function LoginPage() {
         navigate("/signup")
     }
 
+    const toMainHandler = () => {
+        navigate("/main")
+    }
+
     return (
         <>
             <Background>
@@ -24,7 +28,7 @@ function LoginPage() {
                         placeholder="비밀번호를 입력해주세요"
                     />
 
-                    <SubmitButton>로그인</SubmitButton>
+                    <SubmitButton onClick={toMainHandler}>로그인</SubmitButton>
                     <TextContainer>
                         계정이 없으신가요?
                         <ToSignUp onClick={toSignUpHandler}>회원가입</ToSignUp>
