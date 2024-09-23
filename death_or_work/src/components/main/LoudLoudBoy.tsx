@@ -16,7 +16,7 @@ function LoudLoudBoy({ name }: Props) {
 export default LoudLoudBoy
 
 const Container = styled.div`
-    width: 260px;
+    width: 100%;
     height: 40px;
     background: linear-gradient(${Colors.Gray200}, ${Colors.Gray300});
     border-radius: 10px;
@@ -26,4 +26,5 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 `
