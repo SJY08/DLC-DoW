@@ -11,6 +11,7 @@ export const Colors = {
     Gray100: "#eeeeee",
     Gray50: "#f6f6f6",
     White: "#ffffff",
+    GrayHover: "#aaaaaa80",
     CriticalMain: "#db2c36",
     CriticalBackground: "#ffe6d8",
     Blue: "#1263FF",
